@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> MANAGERS </h1>
+    {% for MANAGERS in MANAGERS %}
+        <div class='MANAGERS'>
+       	    <p> MANAGER ID : {{ MANAGERS['MANAGERID'] }}   &emsp;  MANAGER NAME : {{ MANAGERS['MANAGERNAME'] }}  &emsp; TEAM NAME : {{ MANAGERS['TEAMNAME'] }}</p>
+       	     <a href="{{ url_for('edit', id=MANAGERS['MANAGERID']) }}">Edit</a>
+        </div>
+    {% endfor %}
+    <h1> PLAYERS </h1>
+    {% for PLAYERS in PLAYERS %}
+        <div class='PLAYERS'>
+       	    <p> PLAYER ID : {{ PLAYERS['MEMBERID'] }}   &emsp;  PLAYER NAME : {{ PLAYERS['MEMBERNAME'] }}  &emsp; TEAM NAME : {{PLAYERS['TEAMNAME'] }}</p>
+        </div>
+           
+    {% endfor %}
+   
+    
+{% endblock %}
+
+

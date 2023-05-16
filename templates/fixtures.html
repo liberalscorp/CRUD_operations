@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} MATCH FIXTURES {% endblock %}</h1>
+    <form method="post">
+        <label for="Venue">Venue</label>
+        &emsp; &emsp; &emsp; &emsp;  &ensp; &ensp;&ensp; &emsp;&emsp;
+        <label for="Referee">Referee</label>
+        &emsp; &emsp; &emsp; &emsp;  &ensp; &ensp;&emsp;&emsp;
+        <label for="OpponentA">Opponent A</label>
+        &emsp; &emsp; &emsp; &emsp;  &ensp; &ensp;
+        <label for="OpponentB">Opponent B</label>
+        &emsp; &emsp; &emsp; &emsp;  &ensp; &ensp;
+        <label for="ScoreA">Score Team A</label>
+        &emsp; &emsp; &emsp; &emsp; 
+        <label for="ScoreB">Score Team B</label>
+        
+        <br>
+        <input type="text" name="Venue"
+               placeholder="Enter name"
+               value="{{VENUE['VENUENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Ref"
+               placeholder="Enter name"
+               value="{{REFEREE['REFEREENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppA"
+               placeholder="Enter name"
+               value="{{OppA['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppB"
+               placeholder="Enter name"
+               value="{{OppB['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Score1"
+               placeholder="Enter score"
+              value="{{ request.form['Score1'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Score2"
+               placeholder="Enter score"
+              value="{{ request.form['Score2'] }}">
+        </input>
+        &emsp;
+        <br>
+        <br>
+        <input type="text" name="Venue"
+               placeholder="Enter name"
+               value="{{VENUE['VENUENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Ref"
+               placeholder="Enter name"
+               value="{{REFEREE['REFEREENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppA"
+               placeholder="Enter name"
+               value="{{OppA['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppC"
+               placeholder="Enter name"
+               value="{{OppC['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Score3"
+               placeholder="Enter score"
+               value="{{ request.form['Score3'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Score4"
+               placeholder="Enter score"
+               value="{{ request.form['Score4'] }}">
+        </input>
+        &emsp;
+        <br>
+        <br>
+        <input type="text" name="Venue"
+               placeholder="Enter name"
+               value="{{VENUE['VENUENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Ref"
+               placeholder="Enter name"
+               value="{{REFEREE['REFEREENAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppC"
+               placeholder="Enter name"
+               value="{{OppC['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="OppB"
+               placeholder="Enter name"
+               value="{{OppB['TEAMNAME']}}">
+        </input>
+        &emsp;
+        <input type="text" name="Score5"
+               placeholder="Enter score"
+               value="{{ request.form['Score5'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Score6"
+               placeholder="Enter score"
+               value="{{ request.form['Score6'] }}">
+        </input>
+        &emsp;
+        
+        
+        
+        
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+     <hr>
+    
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <h1> POINTS </h1>
+    {% for POINTS in POINTS %}
+        <div class='POINTS'>
+       	    <p> MANAGER : {{POINTS['MANAGERNAME']}}&emsp; &emsp; TEAM NAME : {{ POINTS['TEAMNAME'] }}   &emsp; &emsp;  POINTS : {{POINTS['POINTS'] }} </p>
+        </div>
+           
+    {% endfor %}
+    
+{% endblock %}

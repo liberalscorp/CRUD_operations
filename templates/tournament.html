@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} TOURNAMENT{% endblock %}</h1>
+ 	<form method="post">
+		<label for="Tournament">Tournament</label>
+        &emsp; &emsp; &emsp; &emsp;  &ensp; &ensp;
+        <label for="Organizer">Organizer</label>	
+		<br>		    
+    	<input type="text" name="Tournament"
+               placeholder="Enter name"
+               value="{{ request.form['Tournament'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Organizer"
+               placeholder="Enter name"
+               value="{{ request.form['Organizer'] }}">
+        </input>
+        <br>
+		<label for="Entry">Entry Fees</label>
+        &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;&ensp;
+        <label for="Winning">Winning Prize</label>	
+		<br>		    
+    	<input type="text" name="Entry"
+               placeholder="Enter amount"
+               value="{{ request.form['Entry'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Winning"
+               placeholder="Enter amount"
+               value="{{ request.form['Winning'] }}">
+        </input>
+        <br>
+    	<hr>
+	
+	<button type="submit">Submit</button>
+	</form>
+    
+    
+    
+    
+{% endblock %}

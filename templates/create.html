@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}Registering a new team{% endblock %}</h1>
+    <form method="post">
+        <label for="Manager">Manager</label>
+        &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+       
+        <label for="EMAIL">EMAIL</label> 
+        <br>
+        <input type="text" name="Manager"
+               placeholder="Enter name"
+               value="{{ request.form['Manager'] }}">
+        </input>
+        
+        &emsp;
+        <input type="text" name="EMAIL"
+               placeholder="Enter email"
+               value="{{ request.form['EMAIL'] }}">
+        </input>
+        <br>
+	<label for="Team">Team</label>
+	&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp;
+	<label for="Sponsor">Team Sponsor</label>
+	
+        <br>
+        <input type="text" name="Team"
+               placeholder="Enter team name"
+               value="{{ request.form['Team'] }}">
+        </input>
+        &emsp;
+        <input type="text" name="Sponsor"
+               placeholder="Enter sponsor name"
+               value="{{ request.form['Sponsor'] }}">
+        </input>
+       
+        <br>
+        
+        <label for="Player1 " , >Player 1</label>
+        &emsp; &emsp; &emsp; &ensp; &ensp;&ensp; &emsp; &emsp;
+        
+	<label for="Position1"> Position</label>
+        <br>
+        <input type="text" name="Player1"
+               placeholder="Enter name"
+               value="{{ request.form['Player1'] }}">
+        </input>
+        &emsp;
+         
+        &emsp;
+         <input type="text" name="Position1"
+               placeholder="Enter position"
+               value="{{ request.form['Position1'] }}">
+        </input>
+        <br>
+        
+        <label for="Player2 " >Player</label>
+        &emsp; &emsp; &emsp; &ensp; &ensp;&ensp; &emsp; &emsp;&emsp;
+        
+	<label for="Position2"> Position</label>
+        <br>
+        <input type="text" name="Player2"
+               placeholder="Enter name"
+               value="{{ request.form['Player2'] }}">
+        </input>
+        &emsp;
+         
+        &emsp;
+         <input type="text" name="Position2"
+               placeholder="Enter position"
+               value="{{ request.form['Position2'] }}">
+        </input>
+        <br>
+        
+        <label for="Player3 " >Player</label>
+        &emsp; &emsp; &emsp; &ensp; &ensp;&ensp; &emsp; &emsp;&emsp;
+       
+	<label for="Position3"> Position</label>
+        <br>
+        <input type="text" name="Player3"
+               placeholder="Enter name"
+               value="{{ request.form['Player3'] }}">
+        </input>
+        &emsp;
+        
+        &emsp;
+         <input type="text" name="Position3"
+               placeholder="Enter position"
+               value="{{ request.form['Position3'] }}">
+        </input>
+        <br>
+        
+        <label for="Player4 " >Player</label>
+        &emsp; &emsp; &emsp; &ensp; &ensp;&ensp; &emsp; &emsp;&emsp;
+        
+	<label for="Position4"> Position</label>
+        <br>
+        <input type="text" name="Player4"
+               placeholder="Enter name"
+               value="{{ request.form['Player4'] }}">
+        </input>
+        &emsp;
+         
+        &emsp;
+         <input type="text" name="Position4"
+               placeholder="Enter position"
+               value="{{ request.form['Position4'] }}">
+        </input>
+        <br>
+        
+        <label for="Player5 " >Player</label>
+        &emsp; &emsp; &emsp; &ensp; &ensp;&ensp; &emsp; &emsp;&emsp;
+	<label for="Position5"> Position</label>
+        <br>
+        <input type="text" name="Player5"
+               placeholder="Enter name"
+               value="{{ request.form['Player5'] }}">
+        </input>
+        &emsp;
+        
+        &emsp;
+         <input type="text" name="Position5"
+               placeholder="Enter position"
+               value="{{ request.form['Position5'] }}">
+        </input>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
